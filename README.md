@@ -7,3 +7,4 @@ Plotly - study integrating Pandas dataframes into graphs
 Streamlit - study coding of the web front end
 Deployment - learn basic deployment onto public cloud
 
+To see the page in action - browse to https://daves-test-webdeployment.streamlit.app/
