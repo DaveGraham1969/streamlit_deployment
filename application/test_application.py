@@ -5,7 +5,7 @@ import plotly.express as px
 st.set_page_config(layout='wide')
 
 # set page title
-st.markdown('# Dave\'s Dashboard Test - GDP vs Life Expectancy For Selected Year')
+st.markdown('# :blue[Dave\'s Dashboard Test - GDP vs Life Expectancy For Selected Year]')
 st.markdown('### Markdown text test - exciting times :)')
 
 # initialise "selection" and "df" variables on a global scope
@@ -52,6 +52,7 @@ col2.metric(label='Avg Life Expectancy', value=average_life_exp)
 col3.metric(label='Avg HDI', value=average_hdi)
 
 # st.markdown(f'### Plot of GDP vs Life expectancy for year {selection}')
+st.divider()
 
 # add a scatter plot
 title = 'Plot of GDP vs Life expectancy for year {}'.format(selection)
@@ -62,6 +63,8 @@ scatter_plot = px.scatter(data_frame=df_plot,
                           title=title
                           )
 st.plotly_chart(scatter_plot)
+
+st.divider()
 
 # set up two mini charts under main scatter
 
